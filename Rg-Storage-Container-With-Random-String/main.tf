@@ -1,10 +1,15 @@
 # Terraform Block
 terraform {
-  required_version = ">=1.0.0"
+  required_version = ">= 0.15"
   required_providers {
     azurerm = {
-      source  = "heshicorp/azurerm"
-      version = ">=2.0"
+      source = "hashicorp/azurerm"
+      version = "1.44.0"
+      #version = ">= 2.0" 
+    }
+    random = {
+      source = "hashicorp/random"
+      version = ">= 3.0"
     }
   }
 }
